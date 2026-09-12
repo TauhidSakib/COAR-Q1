@@ -1,0 +1,16 @@
+Result,Dataset 1,Dataset 2,Same conclusion?
+Dataset,SetFit/amazon_polarity,fancyzhx/yelp_polarity,-
+Train / eval size (DistilBERT),"20,000 / 5,000","20,000 / 5,000",YES - identical settings
+Best TF-IDF baseline (accuracy),TF-IDF + Logistic Regression  0.9105,TF-IDF + Logistic Regression  0.9419,YES
+Fine-tuned DistilBERT (accuracy),0.9450,0.9422,-
+DistilBERT beats all baselines?,YES,YES,YES
+COAR mean test Pearson r,0.8815,0.8612,-
+LOO-lite mean test Pearson r,0.8659,0.8631,-
+*** DID COAR WIN? (COAR >= LOO) ***,COAR WINS  (margin +0.0156),LOO WINS  (margin -0.0018),NO - does not replicate
+COAR mean train-test gap (target < 0.3),0.0953,0.1143,YES
+DistilBERT train-eval accuracy gap,0.0181,0.0166,"YES - both small, no overfitting"
+COAR-edited accuracy change,+0.0016,+0.0010,YES - edit stays local
+Random 500-example audit accuracy,0.9580,0.9400,-
+NaN correlations (must be 0),0,0,YES
+Components used,1224 (72 BIG + 1152 SMALL),1224 (72 BIG + 1152 SMALL),YES - identical design
+Constructed COAR pairs per example,2600,2600,YES - identical protocol

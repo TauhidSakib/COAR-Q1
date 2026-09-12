@@ -1,0 +1,6 @@
+Model,Accuracy,Precision,Recall,F1,ROC-AUC,Note
+TF-IDF + Logistic Regression,0.9105,0.9091,0.9139,0.9115,0.968,Sparse linear
+TF-IDF + Linear SVM,0.9055,0.9036,0.9096,0.9066,0.9658,Strong sparse linear
+TF-IDF + SVD + RF,0.8175,0.8197,0.8179,0.8188,0.8987,Dense tree baseline
+Fine-tuned DistilBERT (original),0.945,0.9462,0.9458,0.946,0.9851,Best checkpoint by eval F1
+DistilBERT + COAR edit (k=10 ablated),0.9466,0.9457,0.9497,0.9477,0.9849,Modified BERT - COAR-selected components set to zero

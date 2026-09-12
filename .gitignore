@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------
+# Environments and caches (rebuildable, and far over GitHub's limits)
+# ---------------------------------------------------------------
+venv/
+figure_tools/ff_venv/
+pipcache/
+hf_cache/
+torch_cache/
+mpl_cache/
+__pycache__/
+*.pyc
+
+# ---------------------------------------------------------------
+# Third-party repositories.
+# These are separate projects with their own licences and histories.
+# The README says how to clone them; vendoring them into this repo
+# would mix licence terms.
+# ---------------------------------------------------------------
+figure_tools/elsevier-figure-style/
+figure_tools/FigureForge/
+
+# ---------------------------------------------------------------
+# Large derived artefacts.
+# GitHub hard-blocks any file over 100 MB. These are all regenerated
+# by re-running the pipeline; none of them are source.
+# ---------------------------------------------------------------
+# 771 MB full namespace snapshot
+figure_state.pkl
+# 29 MB, derived from the above
+figure_state_slim.pkl
+# 472 MB archive of outputs/
+outputs.zip
+
+# Fine-tuned model weights (255 MB each)
+checkpoints/*_bert_weights.pt
+outputs/distilbert_best/
+outputs/distilbert_best_d2/
+
+# Fitted TF-IDF baselines (47 MB / 78 MB)
+checkpoints/d1_baselines.pkl
+checkpoints/d2_baselines.pkl
+
+# ---------------------------------------------------------------
+# Kept deliberately: the small attribution checkpoints
+#   d1_coar / d2_coar (0.6 MB each), d1_loo / d2_loo,
+#   d1_refcoar / d2_refcoar, f11_budget, f12_ci
+# They carry every number the figures plot, so the figure code can
+# be re-run without repeating the ~75 minute GPU pipeline.
+# ---------------------------------------------------------------

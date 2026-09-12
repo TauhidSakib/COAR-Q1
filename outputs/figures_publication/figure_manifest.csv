@@ -1,0 +1,11 @@
+Figure,File,Supports,Section,Placement
+Fig. 1,fig1_method_schematic (draw.io - add manually),The method itself,Methods,Main
+Fig. 2,fig2_surrogate_validity,The Ridge surrogate predicts true counterfactual behaviour,Results 4.1,Main
+Fig. 3,fig3_coar_vs_loo,COAR MATCHES exhaustive LOO-lite (CI includes zero),Results 4.2,Main
+Fig. 4,fig4_editing_selectivity,*** HEADLINE: COAR selects far more target-specific components ***,Results 4.3,Main
+Fig. 5,fig5_attribution_landscape,Attribution is concentrated; shows where in the network,Results 4.4,Main
+Fig. 6,fig6_performance_and_locality,The explained model is competent; the edit is local,Results 4.5,Main
+Fig. S1,fig_bert_cm / fig_bert_cm_d2,Confusion matrices,Supplementary,Supplementary
+Fig. S2,fig_bert_roc / fig_bert_roc_d2,ROC curves,Supplementary,Supplementary
+Fig. S3,fig_coar_pearson / fig_coar_pearson_d2,Train-vs-test correlation gap (no surrogate overfitting),Supplementary,Supplementary
+Fig. S4,fig_coar_edit / fig_coar_edit_d2,Raw margin changes behind Fig. 4,Supplementary,Supplementary

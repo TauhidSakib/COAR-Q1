@@ -1,0 +1,3 @@
+Dataset,COAR mean r,LOO-lite mean r,COAR - LOO,Winner
+SetFit/amazon_polarity,0.8815,0.8659,0.0156,COAR
+fancyzhx/yelp_polarity,0.8612,0.8631,-0.0018,LOO-lite
