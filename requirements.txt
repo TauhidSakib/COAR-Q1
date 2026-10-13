@@ -1,7 +1,0 @@
-torch==2.5.1
-transformers
-datasets
-scikit-learn
-pandas
-matplotlib
-jupyter
